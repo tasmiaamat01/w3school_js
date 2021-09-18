@@ -1,0 +1,40 @@
+<html>
+<body>
+<script>  
+function emp(id,name,salary){  
+this.id=id;  
+this.name=name;  
+this.salary=salary;  
+  
+this.changeSalary=changeSalary;  
+function changeSalary(otherSalary){  
+this.salary=otherSalary;  
+}  
+}  
+e=new emp(103,"Sonoo Jaiswal",30000);  
+document.write(e.id+" "+e.name+" "+e.salary);  
+e.changeSalary(45000);  
+document.write("<br>"+e.id+" "+e.name+" "+e.salary);  
+</script>  
+oops
+<script>
+    function requisition(id,name,expense){
+        this.id = id;
+        this.name = name;
+        this.expense = expense;
+    
+        this.changeName = changeName;
+        function changeName(giveNewName){
+            this.name = giveNewName;
+        }
+    }
+        result = new requisition(107,"Tasmia","current Bill");
+        document.write(result.id+result.name+result.expense);
+        result.changeName("Morbi");
+        document.write(result.id+result.name+result.expense);
+</script>
+
+</body>
+</html>
+
+ 

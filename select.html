@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select class="select">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+      
+    <select class="select">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+
+    <select class="select">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">Mercedes</option>
+        <option value="Volvo">Volvo</option>
+    </select>
+    <input type="text" name="name">
+    <script>
+        let selectElem = document.querySelectorAll('.select'),
+            nameInp = document.querySelector('input[name=name]')
+
+        
+
+        selectElem.forEach(el => {
+            el.addEventListener('change', function(e){
+                nameInp.value = e.target.value
+                console.log(nameInp.value);
+
+            })
+        })    
+    </script>
+</body>
+</html>  
+let product_id = document.querySelectorAll('.select');
+console.log(product_id);
+    nprice = document.querySelector('input[name=nprice]');
+    product_id.forEach(el => {
+        el.addEventListener('change', function(e){
+            nprice.value = e.target.value
+        })
+    })   
+});
